@@ -369,16 +369,79 @@
                                 </svg></a></li>
                     </ul>
                 </div>
- 
+                <div class="conteier-right-footer">
+                    <div class="footer-right">
+                        <p class="head-list join">Подпишитесь на рассылку</p>
+                        <label for="mail-fotter">
+                            <input class="input-mail" type="mail-fotter" id="mail-fotter" name="mail-fotter" placeholder="E-mail">
+                        </label>
+                    </div>
+                
+
+                <button data-modal-open="" class="button" type="submit">Подписаться
+                    <svg class="icon-send" height="24" width="24">
+                        <use href="imeges/iconsvg.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+                </div>
         </div>
     </footer>
-       <div class="beckdrop is-hidden" data-modal>
+       <div class="beckdrop @" data-modal>
            <div class="modal">
                 <button type="button" class="modal-close" data-modal-close>
-                    <svg width="11" height="11">
+                    <svg class="close-x" width="11" height="11">
                         <use href="./imeges/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form action="#">
+                    <div class="form-field">
+                        <label class="input-text" for="user-name" >Имя</label>
+                        <input type="text" 
+                        class="form-input" 
+                        name="user-name" 
+                        id="user-name" 
+                        required 
+                        minlength="2"
+                        />
+                        <svg class="icon-person" width="18" height="18">
+                            <use href="./imeges/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label class="input-text" for="user-tel">Телефон</label>
+                        <input type="tel" 
+                        class="form-input" 
+                        name="user-tel" 
+                        id="user-tel" 
+                        required 
+                        />
+                        <svg class="icon-person" width="18" height="18">
+                            <use href="./imeges/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label class="input-text" for="user-email">Почта</label>
+                        <input type="email" 
+                        class="form-input" 
+                        name="user-email" 
+                        id="user-email" 
+                        required
+                        />
+                        <svg class="icon-person" width="18" height="18">
+                            <use href="./imeges/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field ">
+                        <label class="input-text" for="user-text">Комментарий</label>
+                         <textarea name="user-text" class="form-text label" id="user-text" placeholder="Введите текст" ></textarea>
+                    </div> 
+                    <div class="chekbox ">
+                        <input type="checkbox " name="policy" id="policy" class="policy-check"/>
+                        <label for="policy" class="check-text">
+                            </span>Соглашаюсь с рассылкой и принимаю<a class="link-doc link" href=""> Условия договора</a></label>
+                    </div>
+                </form>
            </div>
        </div> 
        <script src="./js/modal.js"></script>
@@ -386,5 +449,5 @@
     </body>
 
 </html>
-
+is-hidden
 
