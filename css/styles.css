@@ -1,3 +1,4 @@
+
 :root {
   --prymary-text-color: #212121;
   --title-text-color: #2196f3;
@@ -955,29 +956,34 @@ header {
   align-items: center;
 }
 
-.check-text::before {
-  content: "";
-  height: 15px;
-  width: 16px;
-  border: 2px solid #000;
-  border-radius: 2px;
-  margin-right: 9px;
-}
+
+
 .chekbox {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.check-input:checked + .check-text::before {
-  background-image: url(../imeges/icon\ check.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-  height: 15px;
+.icon-check {
+  display: block;
   width: 16px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid var(--prymary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
+  transition: background-color 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.check-input:checked + .check-text .icon-check {
+  background-color: var(--title-text-color);
+  fill: #fff;
+  border: none;
+  transition: background-color 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .link-doc {
   border-bottom: 1px solid var(--title-text-color);
