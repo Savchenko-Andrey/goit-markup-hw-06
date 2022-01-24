@@ -980,8 +980,8 @@ header {
 }
 
 .link-doc {
-  border: bottom 1px solid var(--title-text-color);
-
+  border-bottom: 1px solid var(--title-text-color);
+  line-height: 14px;
   margin-left: 2px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
